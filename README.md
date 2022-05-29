@@ -4,4 +4,4 @@
 ### [Slope Game | Bigfoot9999](https://bigfoot9999.github.io/Slope-Game/)
 ### [www.xboxcontroller.tk](https://xboxcontroller.tk)
 
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)
+<img src="https://komarev.com/ghpvc/?username=Bigfoot9999&label=Repo Visitors&color=001eff&style=flat" alt="Bigfoot9999" /> 
