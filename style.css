@@ -1,1 +1,182 @@
-.webgl-content *{border:0;margin:0;padding:0}.webgl-content{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.webgl-content .logo,.progress,.text{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.webgl-content .logo{background:url('logo.png') no-repeat center/contain;width:154px;height:130px}.webgl-content .progress{height:18px;width:141px;margin-top:80px}.webgl-content .progress .empty{background:url('progressEmpty.Light.png') no-repeat right/cover;float:right;width:100%;height:100%;display:inline-block}.webgl-content .progress .full{background:url('progressFull.Light.png') no-repeat left/cover;float:left;width:0%;height:100%;display:inline-block}.webgl-content .text{margin-top:110px;color:#fff;font-weight:700}.webgl-content .spinner{vertical-align:middle}.webgl-content .logo.Dark{background-image:url(../TemplateData/y8-logo.png);width:206px;height:130px;margin:0 auto;background-size:206px 130px}.webgl-content .progress.Dark .empty{background:#000}.webgl-content .progress.Dark .full{background:red}.webgl-content .footer{margin-top:5px;height:38px;line-height:38px;font-family:Helvetica,Verdana,Arial,sans-serif;font-size:18px;background:#fff}.webgl-content .footer .webgl-logo,.title,.fullscreen{height:100%;display:inline-block;background:transparent center no-repeat}.webgl-content .footer .webgl-logo{background-image:url(webgl-logo.png);width:204px;float:left}.webgl-content .footer .title{margin-right:10px;float:right}.webgl-content .footer .fullscreen{background-image:url(fullscreen.png);width:38px;float:right}.webgl-content #gameContainer{background:#4d4d4d!important}.webgl-content .footer{background:#222;font-family:Helvetica,Verdana,Arial,sans-serif;height:40px;line-height:40px;margin:0}.webgl-content .footer .webgl-logo,.title,.fullscreen{background:transparent center no-repeat;display:inline-block;height:100%}.webgl-content .footer .unity,.webgl-content .footer .webgl{box-sizing:border-box;background-position:10px center;background-repeat:no-repeat;background-size:46px 18px;height:40px;float:left;padding:0 10px;width:66px}.webgl-content .footer .unity.enable{background-image:url(unity-enable.png)}.webgl-content .footer .unity.disable{background-image:url(unity-disable.png)}.webgl-content .footer .webgl.enable{background-image:url(webgl-enable.png)}.webgl-content .footer .webgl.disable{background-image:url(webgl-disable.png)}.webgl-content .footer .fullscreen{background-image:url(maximize-icon.png);background-position:10px center;background-repeat:no-repeat;background-size:16px;box-sizing:border-box;color:#fff;float:right;font-size:12px;padding:0 10px 0 36px;width:auto}.webgl-content .footer .unity.disable:hover,.webgl-content .footer .webgl.disable:hover,.webgl-content .footer .fullscreen:hover{background-color:#3e3e3e;cursor:pointer}
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+
+#ad-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  }
+  
+  #ad-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+background-image: url("BGS-circle-HD.png");    
+cursor: pointer;
+position: relative;
+background-position: center center;
+background-size: cover;
+transition: 0.2s;
+
+  }
+  #ad-circle:hover {
+    scale: 1.1;
+     transition: 0.2s;
+  }
+  #popup {
+    font-family: 'Monument Extended', sans-serif;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.473);
+    backdrop-filter: blur(10px);
+    border: 3px solid black;
+    border-radius: 6px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column
+  }
+  
+  #close-btn {
+    margin-top: 10px;
+    position:absolute;
+    top: 2px;
+    right: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("x.png");
+    background-position:  right center;
+background-size: cover;
+cursor: pointer;
+transition: 0.2s;
+
+  }
+  
+
+  #close-btn:hover {
+    scale: 1.1;
+    transition: 0.2s;
+  }
+
+
+  .h1-hero {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: transparent;
+    -webkit-text-stroke: white 2px;
+
+  }
+
+  .p-hero {
+    text-align: center;
+    font-style: italic;
+    
+  }
+
+  .one {
+    width: 28%;
+    height: 60vh;
+    background-color: rgb(73, 53, 23);
+    margin: 20px;
+    background-image: url("/BGS-circle-HD.png");
+    background-size: 100px 100px ;
+    background-position: center center;
+background-repeat: no-repeat; 
+  }
+  .one:hover {
+    background-image:  url("/one.gif");
+    background-size: cover;
+    transition: 1s;
+    border-radius: 10px;
+
+  }
+  .two {
+    width: 28%;
+    height: 60vh;
+    background-color: white;
+    margin: 20px;
+    background-image: url("/2.jpg");
+    transition: 1s;
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #5865F2;
+    border-radius: 10px;
+
+  }
+  .two:hover {
+    background-image: url("/2.jpg");
+    cursor: pointer;
+    background-size: 100px 100px;
+    background-position: center;
+    transition: 1s;
+    background-repeat: repeat;
+  }
+  .three {
+    width: 28%;
+    height: 60vh;
+    background-color: rgb(39, 39, 39);
+    margin: 20px;
+    background-image: url("/BGS-circle-HD.png");
+    background-size: 100px 100px ;
+    background-position: center center;
+background-repeat: no-repeat; 
+border-radius: 10px;
+ }
+  .three:hover {
+    background-image:  url("/three.gif");
+    background-size: cover;
+    transition: 1s;
+
+  }
+
+  .unodostres {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+  }
+
+  h3 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px;
+    -webkit-text-stroke: 0 rgb(0, 0, 0);
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .a {
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .a:hover {
+    color: black;
+    backdrop-filter: blur(7px);
+
+  }
